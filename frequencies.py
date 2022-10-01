@@ -10,14 +10,14 @@ def frequencies(items):
     frequenciesDict = {}
     count=0
     for thing in items:
-        str(thing)
+        stringthing = str(thing)
         for counting in items:
-            str(counting)
-            if thing == counting:
+            stringcounting = str(counting)
+            if stringthing == stringcounting:
                 count += 1
             else:
                 next
-        frequenciesDict[str(thing)] = count
+        frequenciesDict[stringthing] = count
         count = 0
     return frequenciesDict
 
